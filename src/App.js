@@ -1,4 +1,5 @@
 import { Navbar, NavbarBrand } from "reactstrap";
+import Planets from "./components/Planets";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           <NavbarBrand href="/">Planets</NavbarBrand>
         </div>
       </Navbar>
+      <Planets />
     </>
   );
 }

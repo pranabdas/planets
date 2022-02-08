@@ -18,3 +18,7 @@ Add bootstrap css to `index.js`.
 ### Implement Navbar
 
 Learn about reactstrap components here <https://reactstrap.github.io/>
+
+### React component
+Add planet images inside `public/assets/images` folder. Build `Planets`
+component.
