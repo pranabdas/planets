@@ -14,3 +14,7 @@ npm install --save bootstrap reactstrap react-popper @popperjs/core
 ```
 
 Add bootstrap css to `index.js`.
+
+### Implement Navbar
+
+Learn about reactstrap components here <https://reactstrap.github.io/>

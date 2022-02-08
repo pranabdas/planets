@@ -1,7 +1,13 @@
+import { Navbar, NavbarBrand } from "reactstrap";
+
 function App() {
   return (
     <>
-      <p>Hello React</p>
+      <Navbar color="dark" dark expand="md">
+        <div className="container">
+          <NavbarBrand href="/">Planets</NavbarBrand>
+        </div>
+      </Navbar>
     </>
   );
 }
