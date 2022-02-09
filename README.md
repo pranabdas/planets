@@ -23,9 +23,10 @@ Learn about reactstrap components here <https://reactstrap.github.io/>
 Add planet images inside `public/assets/images` folder. Build `Planets`
 component.
 
-
 ### React router
 
 ```console
 npm i react-router-dom
 ```
+
+<https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md>

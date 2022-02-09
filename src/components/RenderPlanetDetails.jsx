@@ -2,7 +2,7 @@ import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
 function RenderPlanetDetails({ planet }) {
   return (
-    <div className="mt-2">
+    <div className="mt-2 mb-2">
       <Card>
         <CardBody>
           <CardTitle tag="h3">{planet.name}</CardTitle>
