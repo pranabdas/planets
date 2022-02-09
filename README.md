@@ -30,3 +30,6 @@ npm i react-router-dom
 ```
 
 <https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md>
+
+### Resources
+- <https://www.coursera.org/learn/front-end-react>
