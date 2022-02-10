@@ -31,5 +31,16 @@ npm i react-router-dom
 
 <https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md>
 
+### Deploy via GitHub Pages
+
+```console
+npm install --save-dev gh-pages
+```
+
+Add `"homepage": "."` and `"predeploy": "npm run build"` and
+`"deploy": "gh-pages -d build"` script in `package.json`. Include a 404 redirect
+to homepage because react router won't work for the static site.
+
+
 ### Resources
 - <https://www.coursera.org/learn/front-end-react>
