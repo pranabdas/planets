@@ -60,7 +60,7 @@ class Feedback extends Component {
 
           <Form onSubmit={this.handleSubmit}>
             <FormGroup row>
-              <Label for="name" md={1}>
+              <Label for="name" md={2}>
                 Name:
               </Label>
               <Col md={4}>
@@ -76,7 +76,7 @@ class Feedback extends Component {
             </FormGroup>
 
             <FormGroup row>
-              <Label for="email" md={1}>
+              <Label for="email" md={2}>
                 Email:
               </Label>
               <Col md={4}>
@@ -92,7 +92,7 @@ class Feedback extends Component {
             </FormGroup>
 
             <FormGroup row>
-              <Label for="message" md={1}>
+              <Label for="message" md={2}>
                 Message:
               </Label>
               <Col md={4}>

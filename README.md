@@ -1,5 +1,6 @@
 # Planets
-Explore the planets in our solar system.
+Explore the planets in our solar system. Visit the app at
+<https://explore-planets.netlify.app/>
 
 ### Initialize the project
 ```console
@@ -39,7 +40,9 @@ npm install --save-dev gh-pages
 
 Add `"homepage": "."` and `"predeploy": "npm run build"` and
 `"deploy": "gh-pages -d build"` script in `package.json`. Include a 404 redirect
-to homepage because react router won't work for the static site.
+to homepage because react router won't work for the static site. Currently
+GitHub deploy is broken due to use of react-router (alternative would be to use
+hash-router), however Netlify deploy working.
 
 
 ### Resources
