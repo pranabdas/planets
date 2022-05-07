@@ -1,23 +1,29 @@
-import React from "react";
+import { Component, createRef } from "react";
 import { Alert } from "reactstrap";
 import Header from "./components/Header";
 import RenderPlanet from "./components/RenderPlanet";
 import RenderPlanetDetails from "./components/RenderPlanetDetails";
 import { planets } from "./data";
 
-class Home extends React.Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       planets: planets,
       planetId: null,
     };
+
+    this.refToDetailsCard = createRef();
   }
 
   handleSelect(planetId) {
     this.setState({
       planetId: planetId,
     });
+
+    setTimeout(() => {
+      this.refToDetailsCard.current.scrollIntoView({ behavior: "smooth" });
+    }, 100)
   }
 
   render() {
@@ -49,15 +55,17 @@ class Home extends React.Component {
             </Alert>
           </div>
 
-          {this.state.planetId !== null ? (
-            <RenderPlanetDetails
-              planet={
-                this.state.planets.filter(
-                  (planet) => planet.id === this.state.planetId
-                )[0]
-              }
-            />
-          ) : null}
+          <div ref={this.refToDetailsCard}>
+            {this.state.planetId !== null && (
+              <RenderPlanetDetails
+                planet={
+                  this.state.planets.filter(
+                    (planet) => planet.id === this.state.planetId
+                  )[0]
+                }
+              />
+            )}
+          </div>
         </div>
       </div>
     );

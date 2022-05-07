@@ -30,10 +30,12 @@ class Header extends React.Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/" navbar="true">
+          <NavLink to="/" className="nav-link">
+          <NavbarBrand navbar="true">
             <img src="/favicon.ico" alt="logo" width="24px" height="24px" />
             &nbsp; Planets
           </NavbarBrand>
+          </NavLink>
 
           <NavbarToggler onClick={this.toggleNav} />
           <Collapse isOpen={this.state.isNavOpen} navbar>

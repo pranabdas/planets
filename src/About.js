@@ -9,7 +9,7 @@ function About() {
 
       <div className="container">
         <Breadcrumb>
-          <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
+          <BreadcrumbItem><Link to="/" className="text-decoration-none">Home</Link></BreadcrumbItem>
           <BreadcrumbItem active>About</BreadcrumbItem>
         </Breadcrumb>
 

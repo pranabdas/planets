@@ -51,7 +51,7 @@ class Feedback extends Component {
         <div className="container">
           <Breadcrumb>
             <BreadcrumbItem>
-              <Link to="/">Home</Link>
+              <Link to="/" className="text-decoration-none">Home</Link>
             </BreadcrumbItem>
             <BreadcrumbItem active>Feedback</BreadcrumbItem>
           </Breadcrumb>
